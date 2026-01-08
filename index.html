@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Portfolio</title>
+    <title>Doug's Portfolio</title>
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-        .profile-image-placeholder {
+        .profile-image {
             width: 400px;
             height: 400px;
-            background-color: #000;
             border: 1px solid #ddd;
+            border-radius: 8px;
+            object-fit: cover;
         }
 
         .about-section {
@@ -32,13 +33,27 @@
         .tabs-section {
             margin-top: 3rem;
         }
+
+        .skills-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+
+        .skill-badge {
+            padding: 0.25rem 0.75rem;
+            font-size: 0.875rem;
+            border-radius: 1rem;
+            white-space: nowrap;
+        }
     </style>
 </head>
 <body>
     <!-- Top Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <span class="navbar-brand mx-auto">Software Portfolio: Your Name</span>
+            <span class="navbar-brand mx-auto">Software Portfolio: Doug Lyford</span>
         </div>
     </nav>
 
@@ -48,7 +63,9 @@
         <div class="row">
             <!-- Left Side - Profile Image -->
             <div class="col-lg-5 col-md-6 mb-4">
-                <div class="profile-image-placeholder"></div>
+                <img src="myFace.jpg"
+                     alt="Profile Picture"
+                     class="profile-image">
             </div>
 
             <!-- Right Side - About Me Text -->
@@ -57,10 +74,14 @@
                     <div>
                         <h2 class="mb-3">About Me</h2>
                         <p class="lead">
-                            Welcome to my software portfolio! I'm a passionate developer with a strong background in creating innovative solutions and building robust applications. With years of experience in various programming languages and frameworks, I enjoy tackling complex challenges and turning ideas into reality. I believe in writing clean, efficient code and staying up-to-date with the latest industry trends and best practices.
+                            Welcome to my software portfolio! I'm a passionate developer with a strong background in creating innovative solutions and building robust applications.
+                            With nearly 15 years of experience across a wide variety of languages, frameworks, technologies, and industries, I have done a little bit of everything 🙂.
+                            I thrive in environments that provide autonomy and ownership. I like to have decision-making power and prefer not to have my hand held.
+                            I like to ship fast, but also enjoy optimizing code and writing thorough unit test coverage.
                         </p>
                         <p>
-                            When I'm not coding, I love exploring new technologies, contributing to open-source projects, and sharing knowledge with the development community. I'm always excited about opportunities to collaborate on meaningful projects that make a positive impact.
+                            When I'm not building or learning, I enjoy a variety of outdoor activities including hiking, camping, off-road motorcycling, and paddleboarding.
+                            I also enjoy studying and playing tournament poker.
                         </p>
                     </div>
                 </div>
@@ -95,11 +116,6 @@
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="hobbies-tab" data-bs-toggle="pill" data-bs-target="#hobbies" type="button" role="tab" aria-controls="hobbies" aria-selected="false">
-                            Hobbies
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
                         <button class="nav-link" id="personal-info-tab" data-bs-toggle="pill" data-bs-target="#personal-info" type="button" role="tab" aria-controls="personal-info" aria-selected="false">
                             Personal Info
                         </button>
@@ -111,18 +127,99 @@
                     <div class="tab-pane fade show active" id="work-history" role="tabpanel" aria-labelledby="work-history-tab">
                         <div class="card mb-3">
                             <div class="card-body">
-                                <h5 class="card-title">Work history #1</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">January 2021 - March 2025</h6>
-                                <h6 class="mb-2"><strong>Job Title</strong></h6>
-                                <p class="card-text">Enter your work history information here</p>
+                                <h5 class="card-title">Pinefall Digital</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">June 2021 - Present</h6>
+                                <h6 class="mb-2"><strong>Founder/Lead Engineer</strong></h6>
+                                <p class="card-text">I founded my own consulting business in 2021 while working full-time as a Lead Engineer at a Fortune 500 company.
+                                    What began as a side project—building small business websites and custom Shopify stores—grew into a full-time venture. Since then,
+                                    I’ve led and delivered a wide variety of projects, including serving as a technical lead for globally distributed teams across multiple organizations.
+                                    Starting and growing my own consulting business has been one of the most rewarding and impactful decisions of my career.
+                                </p>
+                                <h6 class="mt-3">Languages & Technologies</h6>
+                                <div class="skills-badges">
+                                    <span class="badge bg-primary skill-badge">.NET Core</span>
+                                    <span class="badge bg-primary skill-badge">AWS</span>
+                                    <span class="badge bg-primary skill-badge">Azure Cloud</span>
+                                    <span class="badge bg-primary skill-badge">C#</span>
+                                    <span class="badge bg-primary skill-badge">CI/CD</span>
+                                    <span class="badge bg-primary skill-badge">Cloudflare</span>
+                                    <span class="badge bg-primary skill-badge">Entity Framework</span>
+                                    <span class="badge bg-primary skill-badge">GraphQL</span>
+                                    <span class="badge bg-primary skill-badge">Prisma</span>
+                                    <span class="badge bg-primary skill-badge">Python</span>
+                                    <span class="badge bg-primary skill-badge">React</span>
+                                    <span class="badge bg-primary skill-badge">Shopify Admin API</span>
+                                    <span class="badge bg-primary skill-badge">SQL</span>
+                                    <span class="badge bg-primary skill-badge">TypeScript</span>
+                                    <span class="badge bg-primary skill-badge">Windows Services</span>
+                                </div>
                             </div>
                         </div>
 						<div class="card mb-3">
                             <div class="card-body">
-                                <h5 class="card-title">Work history #2</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">April 2025 - Present</h6>
-								<h6 class="mb-2"><strong>Job Title</strong></h6>
-                                <p class="card-text">Enter your work history information here</p>
+                                <h5 class="card-title">Tyler Technologies</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">September 2017 - June 2025</h6>
+								<h6 class="mb-2"><strong>Lead Software Engineer</strong></h6>
+                                <p class="card-text">As a lead engineer on the architecture team, I led many projects in a large-scale cloud transition.
+                                    Delegating work to 50+ engineers, I helped to shape internal policies, build internal tooling, and migrate several applications to modern tech stacks.
+                                    I designed databases, built API’s using .NET, integrated with third party API’s, and built Angular web applications.
+                                    I started at Tyler as a product team software engineer, where I worked on a variety of products and collaborated directly with support, QA, and clients.
+                                    I was promoted to Lead Software Engineer after about 3 years, and shortly after that, moved to the architecture team to help lead cloud migration efforts.
+                                </p>
+                                <h6 class="mt-3">Languages & Technologies</h6>
+                                <div class="skills-badges">
+                                    <span class="badge bg-primary skill-badge">.NET Core</span>
+                                    <span class="badge bg-primary skill-badge">.NET templates</span>
+                                    <span class="badge bg-primary skill-badge">Angular</span>
+                                    <span class="badge bg-primary skill-badge">ASP.NET</span>
+                                    <span class="badge bg-primary skill-badge">AWS</span>
+                                    <span class="badge bg-primary skill-badge">C#</span>
+                                    <span class="badge bg-primary skill-badge">CI/CD</span>
+                                    <span class="badge bg-primary skill-badge">DataDog</span>
+                                    <span class="badge bg-primary skill-badge">Docker</span>
+                                    <span class="badge bg-primary skill-badge">Feature Flags (Harness)</span>
+                                    <span class="badge bg-primary skill-badge">Genero</span>
+                                    <span class="badge bg-primary skill-badge">Github Actions</span>
+                                    <span class="badge bg-primary skill-badge">Kubernetes</span>
+                                    <span class="badge bg-primary skill-badge">OData</span>
+                                    <span class="badge bg-primary skill-badge">Okta</span>
+                                    <span class="badge bg-primary skill-badge">REST APIs</span>
+                                    <span class="badge bg-primary skill-badge">SOAP APIs</span>
+                                    <span class="badge bg-primary skill-badge">SQL Server</span>
+                                    <span class="badge bg-primary skill-badge">SQL</span>
+                                    <span class="badge bg-primary skill-badge">TypeScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Progress Engineering</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">June 2012 - January 2016</h6>
+								<h6 class="mb-2"><strong>Project Engineer</strong></h6>
+                                <p class="card-text">Worked as a Project Engineer in a fast-paced startup environment, delivering industrial automation solutions across diverse industries including food processing, forest products, manufacturing, and wastewater treatment.
+                                    Designed and implemented complex systems, developed company-wide UI/UX standards, and led several large projects from conception to completion.
+                                </p>
+                                <h6 class="mt-3">Languages & Technologies</h6>
+                                <div class="skills-badges">
+                                    <span class="badge bg-primary skill-badge">3D Animation</span>
+                                    <span class="badge bg-primary skill-badge">Automation Direct Languages/Products</span>
+                                    <span class="badge bg-primary skill-badge">C#</span>
+                                    <span class="badge bg-primary skill-badge">CANbus</span>
+                                    <span class="badge bg-primary skill-badge">DeviceNet</span>
+                                    <span class="badge bg-primary skill-badge">EtherCAT</span>
+                                    <span class="badge bg-primary skill-badge">Human-Machine Interfaces</span>
+                                    <span class="badge bg-primary skill-badge">Industrial Automation</span>
+                                    <span class="badge bg-primary skill-badge">Industrial Robot Programming</span>
+                                    <span class="badge bg-primary skill-badge">Modbus TCP</span>
+                                    <span class="badge bg-primary skill-badge">PID Loop Tuning</span>
+                                    <span class="badge bg-primary skill-badge">Programmable Logic Controllers</span>
+                                    <span class="badge bg-primary skill-badge">Relay Ladder Logic</span>
+                                    <span class="badge bg-primary skill-badge">Rockwell Automation Languages/Products</span>
+                                    <span class="badge bg-primary skill-badge">SCADA Systems</span>
+                                    <span class="badge bg-primary skill-badge">VB.NET</span>
+                                    <span class="badge bg-primary skill-badge">Windows Forms</span>
+                                    <span class="badge bg-primary skill-badge">WPF</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -130,36 +227,179 @@
                     <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
                         <div class="card mb-3">
                             <div class="card-body">
-                                <h5 class="card-title">Education #1</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">January 2018 - March 2022</h6>
-                                <h6 class="mb-2"><strong>Degree or Certification</strong></h6>
-                                <p class="card-text">Enter your education information here</p>
+                                <h5 class="card-title">Hack Reactor</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">March 2016 - June 2016</h6>
+                                <h6 class="mb-2"><strong>Advanced Software Engineering Certification</strong></h6>
+                                <p class="card-text">Attended Hack Reactor's Advanced Software Engineering immersive bootcamp program
+                                    to further my education after receiving a bachelor's degree and spending several years in the industry.
+                                    Approximately 13 hours per day, 6 days per week, for 14 weeks. A mix of hands-on building and theory.
+                                    I absolutely LOVED this experience, and learned a ton. It really set me up to be a very successful engineer.
+                                    Voted as cohort president and commencement speaker by my peers.
+                                </p>
                             </div>
                         </div>
 						<div class="card mb-3">
                             <div class="card-body">
-                                <h5 class="card-title">Education #2</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">April 2024 - October 2024</h6>
-								<h6 class="mb-2"><strong>Degree or Certification</strong></h6>
-                                <p class="card-text">Enter your education information here</p>
+                                <h5 class="card-title">University of Maine</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">March 2008 - May 2012</h6>
+								<h6 class="mb-2"><strong>BS Electrical Engineering Technology</strong></h6>
+                                <p class="card-text">BS Electrical Engineering Technology from the University of Maine, with an IT concentration.
+                                    Leaned heavily into software development and computer theory courses. Worked as a C++ tutor,
+                                    VB tutor, and PLC (Programmable Logic Controller) student lab technician.
+                                </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
-                        <div class="card">
+                        <h4>Portfolio</h4>
+                        <p>
+                            For the majority of my career, I have worked on enterprise software and proprietary systems that cannot be easily shared publicly, or require licenses to access.
+                            I have also worked on a handful of personal projects, some of which I can provide video demos for, and some of which are accessible on the internet.
+                            Below, I will share as many resources as I can to showcase my work. I'll start with what I have been up to lately, and work backwards.
+                        </p>
+
+                        <div class="card mb-3">
                             <div class="card-body">
-                                <h5 class="card-title">Portfolio</h5>
-                                <p class="card-text">Content for portfolio projects will be added here...</p>
+                                <h5 class="card-title">eSync: Keystroke PoS Shopify Integration</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2025-2026</h6>
+								<h6 class="mb-2"><strong>Custom Shopify app for bi-directional syncing of Keystroke PoS inventory, customer, and order data</strong></h6>
+                                <p class="card-text">
+                                    This was a solo developer project done through my own LLC.
+                                    I built a custom Shopify app that integrates with Keystroke PoS systems to provide bi-directional syncing.
+                                    This project also involved a second app which is a .NET C# API running as a Windows Service, responsible for
+                                    receiving Shopify order data on the Keystroke side to update Keystroke with new orders and inventory changes.
+                                    This app is not publicly accessible and I am not able to share the proprietary codebase, but below are some screenshots of
+                                    both the Shopify app and the UI for the .NET API Windows Service.
+                                    This product has been launched and is installed for two large distributors in the US, with more installations pending.
+                                </p>
+                                <div class="text-center mt-4">
+                                    <img src="portfolioImages/eSync-shopifyApp.png" alt="eSync Shopify App Screenshot" class="img-fluid" style="max-width: 100%; height: auto;">
+                                </div>
+                                <div class="text-center mt-4">
+                                    <img src="portfolioImages/eSync-backendApiUI.png" alt="eSync Backend API UI Screenshot" class="img-fluid" style="max-width: 100%; height: auto;">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">STAAR Surgical</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2024-2025</h6>
+                                <h6 class="mb-2"><strong>Cloud IOD/Implantable Lens Software</strong></h6>
+                                <p class="card-text">
+                                    For about a year, I worked as a tech lead with a large, globally distributed team to help rebuild a legacy surgical software application.
+                                    This product is used by eye surgeons to plan and simulate implantable lens surgeries, and to order appropriate lenses for patients.
+                                    It is a novel combination of eCommerce and medical device software. I worked heavily on the back end and cloud infrastructure, and delegated work to
+                                    a small team of engineers. I also worked closely with a third-party team from the engineering firm Deloitte, as they were building out an Oracle data backend
+                                    used by the business for reporting and inventory tracking. We integrated our cloud web app with their backend.
+                                    The app is live <a href="https://stella.staar.com/" target="_blank" class="text-decoration-none">here</a>,
+                                    but cannot be accessed without being a registered eye surgeon or lens distributor.
+                                    Unfortunately, I do not have permission to share any code, videos, or screenshots from this project.
+                                    The software itself is a proprietary medical device application, and the client is very protective of their IP.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Enterprise ERP</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2017-2025</h6>
+								<h6 class="mb-2"><strong>World's largest public sector ERP system.</strong></h6>
+                                <p class="card-text">
+                                    While at Tyler Technologies, I worked on a number of products. The biggest one was Enterprise ERP, the company's flagship product.
+                                    I started out as a product team engineer working on HR, payroll, risk management, and benefits modules. This was a full-stack role.
+                                    I built and optmized SQL queries, designed schemas, and worked heavily on API's and business logic. I also did a significant amount of front-end work,
+                                    both creating new features and modules, and fixing lots of bugs in existing modules. I worked directly with many stakeholders, including support,
+                                    QA, senior management, and clients. I started out as a junior engineer, and was promoted to lead engineer after about 3 years (which is very fast and uncommon for this company).
+                                    I skipped over the senior engineer level, and went straight to lead engineer. Eventually, I transitioned into a lead archetcture engineer position, where I shifted my focus to
+                                    cloud infrastructure, internal tooling, and leading cloud migration efforts.
+                                    For a summary of product features and scope, see <a href="https://www.tylertech.com/solutions-products/enterprise-erp" target="_blank" class="text-decoration-none">here</a>.
+                                    For a brief video demo, see <a href="https://youtu.be/qnAGMZbqoAE?si=A6LMLGmbsXCtZEgk" target="_blank" class="text-decoration-none">here</a>.
+                                </p>
+                                <div class="text-center mt-4">
+                                    <img src="portfolioImages/EERP.png" alt="Enterprise ERP Product Screenshot" class="img-fluid" style="max-width: 100%; height: auto;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Vic Firth: Tone Sorting Line</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2014</h6>
+                                <h6 class="mb-2"><strong>Tone sorting and pairing manufacturing line for world's largest drumstick manufacturer.</strong></h6>
+                                <p class="card-text">
+                                    This is a project from earlier on in my career, when I was working as a Project Engineer at Progress Engineering.
+                                    I am very proud of this project - it involved designing and building a fully automated manufacturing line from the ground up,
+                                    replacing a failing legacy system with no documentation. I designed the entire control system, including PLC programming, HMI design,
+                                    and integration with various third party software for acoustic analysis and solenoid control. This new system improved upon the old one in many ways:
+                                    50% improvement in throughput, uses off-the-shelf parts to make it more robust and maintainable, and has great documentation!
+                                    This is a proprietary system and I cannot share source code, but
+                                    <a href="https://youtube.com/shorts/7l3XwaG7Tt4?si=XqiH5T1XuEFxtQhB" target="_blank" class="text-decoration-none">here's a video showcasing the system in action!</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Misc. Industrial Automation Projects</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2010-2014</h6>
+                                <h6 class="mb-2"><strong>Various Projects.</strong></h6>
+                                <p class="card-text">
+                                    From approximately 2010-2014, I worked on a wide variety of projects in industrial controls and automation.
+                                    These included projects in food processing, forest products, manufacturing, and wastewater treatment.
+                                    I worked on critical control systems for many large companies, including: Gifford's Ice Cream, Pleasant River Lumber, Vic Firth, LaBree's Bakery, and many others.
+                                    All of the code for all of these projects is proprietary and cannot be shared. At the time, we didn't even use source control!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Personal & Passion Projects</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Various Years</h6>
+                                <h6 class="mb-2"><strong>Crypto wallet, basic iOS app, DefiResearch tool, online poker notes & player profiling app, etc.</strong></h6>
+                                <p class="card-text">
+                                    In addition to the work I've done for employers and clients, I've also built a number of personal projects over the years. Some of these include:
+                                    <ul>
+                                        <li>
+                                            <strong>Pokah Notes:</strong> A few months ago, I created an app for player profiling and note taking for online poker.
+                                            This was a thing I wish existed, but didn't, so I made it for myself. It is live <a href="https://www.pokahnotes.app" target="_blank" class="text-decoration-none">here</a>,
+                                            and you can create a free account and play with it! This was my first (and only) experiment with AI vibe coding. It was helpful to quickly build a useful tool, but
+                                            had many limitations.
+                                        <li>
+                                            <strong>Crypto Wallet:</strong> while attending Hack Reactor, we had a two-day sprint where we were asked to build our own project, which could be anything.
+                                            I build a functional <a href="https://github.com/Douggyfr3sh/BitFreeze" target="_blank" class="text-decoration-none">Bitcoin wallet generator</a>, which allowed users to create new Bitcoin wallets, view their balances, and send/receive Bitcoin transactions.
+                                            I actually <a href="https://www.youtube.com/watch?v=aQ5oBAFjx4g" target="_blank" class="text-decoration-none">sent real BTC to this address as a live test</a>, in front of my classmates and instructors! This was a desktop app built using Electron.
+                                        </li>
+                                        <li>
+                                            <strong>Other stuff:</strong> Check out my public <a href="https://github.com/Douggyfr3sh?tab=repositories" target="_blank" class="text-decoration-none">github repository</a>
+                                            to see a few other things I've worked on over the years. There are also some very old
+                                            <a href="https://www.youtube.com/@Douggyfreshy/videos?view=0&sort=dd&shelf_id=3" target="_blank" class="text-decoration-none">software demo videos</a>
+                                            on my now dormant YouTube channel, mostly from before I started working at Tyler Tech many years ago.
+                                        </li>
+                                    </ul>
+                                </p>
                             </div>
                         </div>
                     </div>
-
                     <div class="tab-pane fade" id="work-style" role="tabpanel" aria-labelledby="work-style-tab">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Work Style</h5>
-                                <p class="card-text">Content for work style will be added here...</p>
+                                <p class="card-text">I have worked in a variety of roles at both very small and very large companies, and also as a solo dev through my consulting business.
+                                    My favorite thing to do is build things. I love creating new software, because I get to build my own little world.
+                                    I thrive in environments providing autonomy and ownership, and don't do well with micromanagement and hand holding. I like having decision making power.
+                                    I like to ship fast, and believe that the pursuit of perfection can sometimes be the enemy of completing something that is good enough.
+                                    I am perfectly happy to ship code that is not perfect, and to optimize later, using an iterative process.
+                                    I respect timelines and requirements, and while I have a great attention to detail - I know when to prioritize speed over perfection.
+                                    Having said that, optimizing code and improving efficiency are also activities I find to be very enjoyable.
+                                    In December 2025, I completed a <a href="https://www.thinkherrmann.com/whole-brain-thinking-blog/work-style-assessment/" target="_blank" class="text-decoration-none">Work Style assessment</a> customized for software engineers, and learned that I lean heavily towards being a <strong>Producer</strong>,
+                                    while also having a preference towards <strong>Innovation</strong>. I found this to be very accurate, and the results are shown below:
+                                </p>
+                                <div class="mt-4">
+                                    <img src="MyWorkStyle.png" alt="Work Style Assessment Results" class="img-fluid w-100" style="max-width: 100%; height: auto;">
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -177,7 +417,21 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Personal Info</h5>
-                                <p class="card-text">Content for personal information will be added here...</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Hallowell, ME, USA - EST (GMT-5)</h6>
+                                <p class="card-text">Hi! 👋 I'm Doug. I'm a 37-year-old software engineer with a broad background.
+                                    When I'm not coding, building, or learning, I'm usually either doing something outside (hiking is my favorite), or playing poker.
+                                    I live in Hallowell, Maine with my wife Olivia and our cat Chandler (dog coming soon!). I love our little city. It's charming, walkable, and has a great community.
+                                    We are fortunate to have access to many beautiful hiking trails and local ponds, a vibrant music and art scene, great food, and a wonderful group of close friends.
+                                </p>
+                                <div class="row mt-4">
+                                    <div class="col-md-6 mb-3">
+                                        <img src="myHometownDistance.jpg" alt="Hometown Distance Map" class="img-fluid w-100">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <img src="MeAndLiv.png" alt="Me and Liv" class="img-fluid w-100">
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -185,6 +439,21 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-light mt-5 py-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="text-dark">Doug Lyford</span>
+                </div>
+                <div>
+                    <a href="mailto:DougRLyford@gmail.com" class="text-decoration-none text-dark me-3">DougRLyford@gmail.com</a>
+                    <a href="tel:+12073134426" class="text-decoration-none text-dark">(207) 313-4426</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap JavaScript CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
