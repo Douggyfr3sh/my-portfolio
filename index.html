@@ -7,11 +7,12 @@
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-        .profile-image-placeholder {
+        .profile-image {
             width: 400px;
             height: 400px;
-            background-color: #000;
             border: 1px solid #ddd;
+            border-radius: 8px;
+            object-fit: cover;
         }
 
         .about-section {
@@ -62,7 +63,9 @@
         <div class="row">
             <!-- Left Side - Profile Image -->
             <div class="col-lg-5 col-md-6 mb-4">
-                <div class="profile-image-placeholder"></div>
+                <img src="myFace.jpg"
+                     alt="Profile Picture"
+                     class="profile-image">
             </div>
 
             <!-- Right Side - About Me Text -->
@@ -71,10 +74,14 @@
                     <div>
                         <h2 class="mb-3">About Me</h2>
                         <p class="lead">
-                            Welcome to my software portfolio! I'm a passionate developer with a strong background in creating innovative solutions and building robust applications. With years of experience in various programming languages and frameworks, I enjoy tackling complex challenges and turning ideas into reality. I believe in writing clean, efficient code and staying up-to-date with the latest industry trends and best practices.
+                            Welcome to my software portfolio! I'm a passionate developer with a strong background in creating innovative solutions and building robust applications.
+                            With nearly 15 years of experience across a wide variety of languages, frameworks, technologies, and industries, I have done a little bit of everything 🙂.
+                            I thrive in environments that provide autonomy and ownership. I like to have decision-making power and prefer not to have my hand held.
+                            I like to ship fast, but also enjoy optimizing code and writing thorough unit test coverage.
                         </p>
                         <p>
-                            When I'm not coding, I love exploring new technologies, contributing to open-source projects, and sharing knowledge with the development community. I'm always excited about opportunities to collaborate on meaningful projects that make a positive impact.
+                            When I'm not building or learning, I enjoy a variety of outdoor activities including hiking, camping, off-road motorcycling, and paddleboarding.
+                            I also enjoy studying and playing tournament poker.
                         </p>
                     </div>
                 </div>
