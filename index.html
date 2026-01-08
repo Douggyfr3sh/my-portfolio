@@ -252,14 +252,136 @@
                     </div>
 
                     <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
-                        <div class="card">
+                        <h4>Portfolio</h4>
+                        <p>
+                            For the majority of my career, I have worked on enterprise software and proprietary systems that cannot be easily shared publicly, or require licenses to access.
+                            I have also worked on a handful of personal projects, some of which I can provide video demos for, and some of which are accessible on the internet.
+                            Below, I will share as many resources as I can to showcase my work. I'll start with what I have been up to lately, and work backwards.
+                        </p>
+
+                        <div class="card mb-3">
                             <div class="card-body">
-                                <h5 class="card-title">Portfolio</h5>
-                                <p class="card-text">Content for portfolio projects will be added here...</p>
+                                <h5 class="card-title">eSync: Keystroke PoS Shopify Integration</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2025-2026</h6>
+								<h6 class="mb-2"><strong>Custom Shopify app for bi-directional syncing of Keystroke PoS inventory, customer, and order data</strong></h6>
+                                <p class="card-text">
+                                    This was a solo developer project done through my own LLC.
+                                    I built a custom Shopify app that integrates with Keystroke PoS systems to provide bi-directional syncing.
+                                    This project also involved a second app which is a .NET C# API running as a Windows Service, responsible for
+                                    receiving Shopify order data on the Keystroke side to update Keystroke with new orders and inventory changes.
+                                    This app is not publicly accessible and I am not able to share the proprietary codebase, but below are some screenshots of
+                                    both the Shopify app and the UI for the .NET API Windows Service.
+                                    This product has been launched and is installed for two large distributors in the US, with more installations pending.
+                                </p>
+                                <div class="text-center mt-4">
+                                    <img src="portfolioImages/eSync-shopifyApp.png" alt="eSync Shopify App Screenshot" class="img-fluid" style="max-width: 100%; height: auto;">
+                                </div>
+                                <div class="text-center mt-4">
+                                    <img src="portfolioImages/eSync-backendApiUI.png" alt="eSync Backend API UI Screenshot" class="img-fluid" style="max-width: 100%; height: auto;">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">STAAR Surgical</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2024-2025</h6>
+                                <h6 class="mb-2"><strong>Cloud IOD/Implantable Lens Software</strong></h6>
+                                <p class="card-text">
+                                    For about a year, I worked as a tech lead with a large, globally distributed team to help rebuild a legacy surgical software application.
+                                    This product is used by eye surgeons to plan and simulate implantable lens surgeries, and to order appropriate lenses for patients.
+                                    It is a novel combination of eCommerce and medical device software. I worked heavily on the back end and cloud infrastructure, and delegated work to
+                                    a small team of engineers. I also worked closely with a third-party team from the engineering firm Deloitte, as they were building out an Oracle data backend
+                                    used by the business for reporting and inventory tracking. We integrated our cloud web app with their backend.
+                                    The app is live <a href="https://stella.staar.com/" target="_blank" class="text-decoration-none">here</a>,
+                                    but cannot be accessed without being a registered eye surgeon or lens distributor.
+                                    Unfortunately, I do not have permission to share any code, videos, or screenshots from this project.
+                                    The software itself is a proprietary medical device application, and the client is very protective of their IP.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Enterprise ERP</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2017-2025</h6>
+								<h6 class="mb-2"><strong>World's largest public sector ERP system.</strong></h6>
+                                <p class="card-text">
+                                    While at Tyler Technologies, I worked on a number of products. The biggest one was Enterprise ERP, the company's flagship product.
+                                    I started out as a product team engineer working on HR, payroll, risk management, and benefits modules. This was a full-stack role.
+                                    I built and optmized SQL queries, designed schemas, and worked heavily on API's and business logic. I also did a significant amount of front-end work,
+                                    both creating new features and modules, and fixing lots of bugs in existing modules. I worked directly with many stakeholders, including support,
+                                    QA, senior management, and clients. I started out as a junior engineer, and was promoted to lead engineer after about 3 years (which is very fast and uncommon for this company).
+                                    I skipped over the senior engineer level, and went straight to lead engineer. Eventually, I transitioned into a lead archetcture engineer position, where I shifted my focus to
+                                    cloud infrastructure, internal tooling, and leading cloud migration efforts.
+                                    For a summary of product features and scope, see <a href="https://www.tylertech.com/solutions-products/enterprise-erp" target="_blank" class="text-decoration-none">here</a>.
+                                    For a brief video demo, see <a href="https://youtu.be/qnAGMZbqoAE?si=A6LMLGmbsXCtZEgk" target="_blank" class="text-decoration-none">here</a>.
+                                </p>
+                                <div class="text-center mt-4">
+                                    <img src="portfolioImages/EERP.png" alt="Enterprise ERP Product Screenshot" class="img-fluid" style="max-width: 100%; height: auto;">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Vic Firth: Tone Sorting Line</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2014</h6>
+                                <h6 class="mb-2"><strong>Tone sorting and pairing manufacturing line for world's largest drumstick manufacturer.</strong></h6>
+                                <p class="card-text">
+                                    This is a project from earlier on in my career, when I was working as a Project Engineer at Progress Engineering.
+                                    I am very proud of this project - it involved designing and building a fully automated manufacturing line from the ground up,
+                                    replacing a failing legacy system with no documentation. I designed the entire control system, including PLC programming, HMI design,
+                                    and integration with various third party software for acoustic analysis and solenoid control. This new system improved upon the old one in many ways:
+                                    50% improvement in throughput, uses off-the-shelf parts to make it more robust and maintainable, and has great documentation!
+                                    This is a proprietary system and I cannot share source code, but
+                                    <a href="https://youtube.com/shorts/7l3XwaG7Tt4?si=XqiH5T1XuEFxtQhB" target="_blank" class="text-decoration-none">here's a video showcasing the system in action!</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Misc. Industrial Automation Projects</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2010-2014</h6>
+                                <h6 class="mb-2"><strong>Various Projects.</strong></h6>
+                                <p class="card-text">
+                                    From approximately 2010-2014, I worked on a wide variety of projects in industrial controls and automation.
+                                    These included projects in food processing, forest products, manufacturing, and wastewater treatment.
+                                    I worked on critical control systems for many large companies, including: Gifford's Ice Cream, Pleasant River Lumber, Vic Firth, LaBree's Bakery, and many others.
+                                    All of the code for all of these projects is proprietary and cannot be shared. At the time, we didn't even use source control!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Personal & Passion Projects</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Various Years</h6>
+                                <h6 class="mb-2"><strong>Crypto wallet, basic iOS app, DefiResearch tool, online poker notes & player profiling app, etc.</strong></h6>
+                                <p class="card-text">
+                                    In addition to the work I've done for employers and clients, I've also built a number of personal projects over the years. Some of these include:
+                                    <ul>
+                                        <li>
+                                            <strong>Pokah Notes:</strong> A few months ago, I created an app for player profiling and note taking for online poker.
+                                            This was a thing I wish existed, but didn't, so I made it for myself. It is live <a href="https://www.pokahnotes.app" target="_blank" class="text-decoration-none">here</a>,
+                                            and you can create a free account and play with it! This was my first (and only) experiment with AI vibe coding. It was helpful to quickly build a useful tool, but
+                                            had many limitations.
+                                        <li>
+                                            <strong>Crypto Wallet:</strong> while attending Hack Reactor, we had a two-day sprint where we were asked to build our own project, which could be anything.
+                                            I build a functional <a href="https://github.com/Douggyfr3sh/BitFreeze" target="_blank" class="text-decoration-none">Bitcoin wallet generator</a>, which allowed users to create new Bitcoin wallets, view their balances, and send/receive Bitcoin transactions.
+                                            I actually <a href="https://www.youtube.com/watch?v=aQ5oBAFjx4g" target="_blank" class="text-decoration-none">sent real BTC to this address as a live test</a>, in front of my classmates and instructors! This was a desktop app built using Electron.
+                                        </li>
+                                        <li>
+                                            <strong>Other stuff:</strong> Check out my public <a href="https://github.com/Douggyfr3sh?tab=repositories" target="_blank" class="text-decoration-none">github repository</a>
+                                            to see a few other things I've worked on over the years. There are also some very old
+                                            <a href="https://www.youtube.com/@Douggyfreshy/videos?view=0&sort=dd&shelf_id=3" target="_blank" class="text-decoration-none">software demo videos</a>
+                                            on my now dormant YouTube channel, mostly from before I started working at Tyler Tech many years ago.
+                                        </li>
+                                    </ul>
+                                </p>
                             </div>
                         </div>
                     </div>
-
                     <div class="tab-pane fade" id="work-style" role="tabpanel" aria-labelledby="work-style-tab">
                         <div class="card">
                             <div class="card-body">
